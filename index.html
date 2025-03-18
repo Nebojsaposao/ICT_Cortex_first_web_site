@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta podaci za kodiranje i responzivnost -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Povezivanje sa CSS fajlom za stilizaciju stranice -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Naziv stranice koji se prikazuje na kartici pretraživača -->
+  <title>First website on ICTCortex academy</title>
+</head>
+<body>
+
+  <!-- Header - Početak sekcije zaglavlja -->
+  <header class="header">
+    <!-- Logo - Ovdje je logo i link ka početnoj stranici -->
+    <div class="logo">
+      <a href="index.html" class="a-reset">Coffe<span>Dream</span></a>
+    </div>
+    <!-- Kraj logotipa -->
+
+    <!-- Navigacija - Meni sa linkovima -->
+    <nav class="nav">
+      <ul class="ul-reset">
+        <li><a href="#" class="a-reset">Home</a></li> <!-- Link ka početnoj stranici -->
+        <li><a href="#" class="a-reset">About</a></li> <!-- Link ka stranici o nama -->
+        <li class="main-menu-li"><a href="#" class="a-reset">Varieties</a>
+          <ul class="submenu ul-reset">
+              <li><a href="#" class="a-reset">Arabica</a></li>
+              <li><a href="#" class="a-reset">Robusta</a></li>
+              <li><a href="#" class="a-reset">Liberica</a></li>
+            </ul>
+        </li> <!-- Link ka stranci sa vrstama kafe -->
+        <li><a href="#" class="a-reset">Contact</a></li> <!-- Link ka stranici sa kontakt informacijama -->
+      </ul>
+    </nav>
+    <!-- Kraj navigacije -->
+
+    <!-- Clear-fix - Koristi se za čišćenje plovnih elemenata -->
+    <div class="clear-fix"></div>
+  </header>
+  <!-- Kraj header-a -->
+
+  <!-- Jumbotron - Veliki baner na početnoj stranici -->
+  <section class="jumbotron">
+    <h1>Greetings from the world of <span> coffee! </span></h1> <!-- Naslov sa pozdravom -->
+  </section>
+  <!-- Kraj Jumbotron-a -->
+
+  <!-- Main - Glavni sadržaj stranice -->
+  <main class="main">
+    
+    <!-- section container-cards - Sekcija sa karticama za različite vrste kafe -->
+    <section class="container-cards">
+      <div class="container">
+        <h2>Coffee Varieties</h2> <!-- Naslov za vrste kafe -->
+        <div class="container-card-holder">
+          <!-- Kartica za Arabicu -->
+          <article class="container-card">
+            <h3>Arabica</h3>
+            <img src="./image/arabica.jpeg" alt="Image of arabica coffee"> <!-- Slika arabica kafe -->
+            <p>Smooth, aromatic, slightly sweet, with mild acidity and rich flavor.</p> <!-- Opis arabica kafe -->
+            <a href="#" class="btn a-reset">Read more</a> <!-- Link za više informacija -->
+          </article>
+        </div>
+
+        <div class="container-card-holder">
+          <!-- Kartica za Robustu -->
+          <article class="container-card">
+            <h3>Robusta</h3>
+            <img src="./image/robusta.jpeg" alt="Image of Robusta coffee"> <!-- Slika Robusta kafe -->
+            <p>Strong, bold, earthy, with higher caffeine content and a slightly bitter taste.</p> <!-- Opis Robusta kafe -->
+            <a href="#" class="btn a-reset">Read more</a> <!-- Link za više informacija -->
+          </article>
+        </div>
+
+        <div class="container-card-holder">
+          <!-- Kartica za Libericu -->
+          <article class="container-card">
+            <h3>Liberica</h3>
+            <img src="./image/Liberica.jpeg" alt="Image of Liberica coffee"> <!-- Slika Liberica kafe -->
+            <p>Unique, fruity, floral aroma, with woody, smoky notes and full-bodied flavor.</p> <!-- Opis Liberica kafe -->
+            <a href="#" class="btn a-reset">Read more</a> <!-- Link za više informacija -->
+          </article>
+        </div>
+        <div class="clear-fix"></div>
+      </div>
+    </section>
+    <!-- Kraj section container-cards -->
+
+    <!-- section container-brewing-steps - Sekcija sa uputstvima kako skuvati savršen napitak -->
+    <section class="container-brewing-steps">
+      <div class="container">
+        <h2>How to brew the perfect cup</h2> <!-- Naslov sa uputstvima -->
+        
+        <article class="left">
+
+          <ul class="ul-reset">
+            <li>Start with fresh, high-quality coffee beans.</li> <!-- Prvi korak -->
+            <li>Grind the beans just before brewing for maximum freshness.</li> <!-- Drugi korak -->
+            <li>Use clean, filtered water, and ensure the right water temperature (around 195–205°F).</li> <!-- Treći korak -->
+            <li>Measure the coffee and water ratio correctly, typically 1:15 (coffee:water).</li> <!-- Četvrti korak -->
+            <li>Brew using your preferred method (drip, French press, pour-over, etc.) for the ideal extraction time.</li> <!-- Peti korak -->
+            <li>Serve immediately and enjoy your perfect cup of coffee!</li> <!-- Šesti korak -->
+          </ul>
+        </article>
+        
+        
+        <article class="right">
+          <img src="./image/man and coffe.jpeg" alt=""> <!-- Slika uz tekst uputstava -->
+        </article>
+        
+         <div class="clear-fix"></div>
+      </div>
+    </section>
+    <!-- Kraj section brewing-steps -->
+
+    <!-- section container-form -->
+    <section class="container-form">
+      <div class="container">
+        <h2>Get in touch with us</h2> <!-- Naslov sa kontakt forme -->
+        <article class="left">
+          <img src="./image/contact-us.jpeg" alt=""> <!-- Slika uz kontakt formu -->
+        </article>
+        <article class="right">
+          <form action="#" method="get">
+            <label for="name">Name:</label> <!-- Ime -->
+            <input type="text" id="name" name="name" required> <!-- Polje
+            za unos imena -->
+            <label for="email">Email:</label> <!-- Email -->
+            <input type="email" id="email" name="email" required> <!-- Polje
+            za unos email adrese -->
+            <label for="message">Message:</label> <!-- Poruka -->
+            <textarea id="message" name="message" required></textarea> <!-- Polje za unos
+            poruke -->
+            <button type="submit" class="btn">Send</button>
+            <input type="reset" value="Reset" class="btn">
+            </form>
+          </form>
+        </article>
+        <div class="clear-fix"></div>
+      </div>
+    </section>
+    <!-- Kraj section container-form -->
+    
+    <!-- footer - Početak sekcije za footer -->
+    <footer class="footer">
+     
+      <div class="footer-container">
+        <article class="footer-logo">
+            <a href="index.html" class="a-reset">Coffe<span>Dream</span></a>
+        </article>
+        <article class="footer-nav">
+           <ul class="ul-reset">
+          <li><a href="#" class="a-reset">Home</a></li> <!-- Link ka početnoj stranici -->
+          <li><a href="#" class="a-reset">About</a></li> <!-- Link ka stranici o nama -->
+          <li><a href="#" class="a-reset">Varieties</a>
+          </li> <!-- Link ka stranci sa vrstama kafe -->
+          <li><a href="#" class="a-reset">Contact</a></li> <!-- Link ka stranici sa kontakt informacijama -->
+        </ul>
+        </article>
+        <article class="footer-userful-link">
+          <ul class="ul-reset">
+            <li><a href="https://www.ncausa.org/" target="_blank">Coffee Association</a></li>
+            <li><a href="https://www.homegrounds.co/" target="_blank">Home Grounds</a></li>
+            <li><a href="https://perfectdailygrind.com/" target="_blank">Perfect Daily Grind</a></li>
+          </ul>
+        </article>
+        <article class="footer-contact-info">
+          <ul class="ul-reset">
+            <li><strong>Email:</strong> <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+123456789">+382 69 666 666</a></li>
+            <li><strong>Adress:</strong> 123 Coffee Street, Bean City, CA</li>
+          </ul>
+        </article>
+        <div class="clear-fix"></div>
+      </div>
+      
+      <div class="dev-info"> <!-- Div za informacije o developeru -->
+        <p>Developed by
+          <a href="#" class="a-reset"> <span>Nebojša Milutinović</span></a></p> <!-- Link ka profilu developera -->
+      </div>
+    </footer>
+    <!-- Kraj footer-a -->
+
+  </main>
+  <!-- Kraj main sekcije -->
+
+</body>
+</html>
