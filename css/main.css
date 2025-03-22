@@ -11,32 +11,36 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Postavlja font za telo stranice */
   color: #333; /* Postavlja osnovnu boju teksta */
   position: relative;
+  overflow-x: hidden;
 }
 
 /* Header - Stilizuje gornji deo stranice (zaglavlje) */
 .header {
-  position: relative; /* Postavlja poziciju zaglavlja kao relativnu kako bi se moglo pozicionirati u odnosu na roditeljski element */
+  height: 10vh;
+  width: 100vw;
   background: transparent; /* Pozadina zaglavlja je providna */
   z-index: 10; /* Postavlja z-index kako bi header bio iznad drugih elemenata */
+  padding: 20px; /* Dodaje padding oko logo teksta */
 }
 
 .header .logo{
   float: left; /* Pomera logo u levi ugao */
-  font-size: 36px; /* Postavlja veličinu fonta za logo */
-  padding: 10px; /* Dodaje padding oko logo teksta */
+  
 }
 .header .logo a{
   color: #fff; /* Postavlja boju linka na belu */
+  font-size: 36px; /* Postavlja veličinu fonta za logo */
 }
 .header .logo a span{
   color: #f00; /* Postavlja boju dela teksta unutar linka na crvenu */
+  font-size: 40px; /* Postavlja veličinu fonta za logo */
 }
 .header .nav{
   float: right; /* Pomera navigaciju na desnu stranu */
 }
 .header .nav ul li{
   float: left; /* Postavlja stavke menija u red sa leve strane */
-  padding: 20px; /* Dodaje padding oko stavki menija */
+  padding: 15px; /* Dodaje padding oko stavki menija */
 }
 .header .nav ul li a{
   color: #fff; /* Postavlja boju linkova u meniju na belu */
@@ -52,16 +56,16 @@ body{
 }
 .submenu{
   opacity: 0;;
-  width: 98px;
+  width: 120px;
   height: 200px;
-  background-color: rgba(83, 82, 82, 0.1); /* Poluprovidna siva */
+  background-color: rgba(83, 82, 82, 0.2); /* Poluprovidna siva */
   backdrop-filter: blur(5px); /* Zamućuje sadržaj iza elementa */
   position: absolute;
   border-radius: 8px;
   transition: all .5s;
 }
 .header .nav .submenu li a{
-  font-size: 18px;
+  font-size: 20px;
 }
 .main-menu-li:hover .submenu{
   opacity: 1;
@@ -74,17 +78,16 @@ body{
 
 /* Jumbotron - Velika pozadinska slika sa tekstom koji je u prvom planu */
 .jumbotron {
-  height: 100vh; /* Postavlja visinu jumbotrone na 100% visine ekrana */
+  width: 100vw;
+  height: 100vh; /* Postavlja visinu jumbotrone na 100vh visine ekrana */
   background-image: linear-gradient(rgba(49, 43, 35, 0.3), rgba(0, 0, 0, 1)), url("../image/crie\ a\ sua\ cafeteria.jpeg"); /* Pozadina sa gradijentom i slikom */
   background-size: cover; /* Slika se proteže preko celog ekrana */
   background-position: center; /* Pozicionira sliku u centar */
-  position: relative; /* Omogućava pozicioniranje drugih elemenata unutar jumbotrone */
-  top: -80px; /* Pomera jumbotron prema gore */
-  z-index: 5; /* Postavlja z-index kako bi bio ispod zaglavlja */
+  margin-top: -10vh;
 }
 .jumbotron h1{
   color: #ffffff; /* Postavlja boju naslova na belu */
-  font-size: 34px; /* Veličina fonta za naslov */
+  font-size: 60px; /* Veličina fonta za naslov */
   text-align: center; /* Centriranje teksta */
   position: absolute; /* Pozicionira naslov apsolutno unutar jumbotrone */
   top: 50%; /* Postavlja naslov vertikalno u sredinu */
@@ -102,7 +105,6 @@ body{
   background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("../image/main-image.jpeg"); /* Pozadina sa gradijentom i slikom */
   background-size: cover; /* Slika se proteže preko celog ekrana */
   background-position: center;
-  margin-top: -80px; /* Uklanja dodatni razmak između jumbotrona i glavnog dela */
 }
 
 /* container-cards - Kontejner za kartice sa informacijama */
@@ -126,14 +128,16 @@ body{
 }
 .container-card h3{
   padding: 10px 0; /* Padding oko naslova kartice */
+  font-size: 26px;
 }
 .container-card img{
-  width: 70%; /* Slika u kartici zauzima 70% širine kartice */
+  width: 80%; /* Slika u kartici zauzima 70% širine kartice */
   padding-bottom: 10px; /* Padding na dnu slike */
 }
 .container-card p{
   width: 70%; /* Širina teksta je 70% širine kartice */
   margin: 0 auto 10px; /* Centriranje teksta i dodavanje margine na dnu */
+  font-size: 24px;
 }
 .btn {
   display: inline-block; /* Dugme se ponaša kao inline blok */
@@ -161,7 +165,7 @@ body{
 .container-brewing-steps .container .left,
 .container-brewing-steps .container .right{
   float: left; /* Elementi unutar sekcije su raspoređeni horizontalno */
-  width: 50%; /* Svaka polovina sekcije zauzima 48% širine, ostavlja razmak između njih */
+  width: 50%; /* Svaka polovina sekcije zauzima 50% širine, ostavlja razmak između njih */
 }
 .container-brewing-steps .container h2{
   text-align: center; /* Centriranje naslova */
@@ -170,10 +174,10 @@ body{
 }
 .container-brewing-steps .container .left{
   position: relative;
-  height: 400px;
+  height: 350px;
 }
 .container-brewing-steps  .container .left ul{
-  width: 80%;
+  width: 90%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -181,20 +185,23 @@ body{
 }
 .container-brewing-steps  .container .left ul li{
   padding: 2px 0;
+  font-size: 24px;
 }
 .container-brewing-steps .container .left h3{
   padding-top: 40px;
 }
 .container-brewing-steps .container .right{
   position: relative;
-  height: 400px;
+  height: 350px;
 }
 .container-brewing-steps .container .right img{
-  width: 80%;
   position: absolute;
+  width: 100%;
+  height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 
@@ -219,18 +226,20 @@ body{
 }
 .container-form .container .left {
   position: relative;
-  height: 400px;
+  height: 350px;
 }
 .container-form .container .left img{
-  width: 80%;
   position: absolute;
+  width: 100%;
+  height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 .container-form .container .right {
   position: relative;
-  height: 400px;
+  height: 350px;
 }
 .container-form .container .right form{
   width: 80%;
@@ -238,6 +247,7 @@ body{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
 }
 .container-form .container .right form input,
 .container-form .container .right form textarea{
@@ -273,9 +283,11 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-size: 18px;
 }
 .footer .footer-container .footer-logo a span{
  color: red;
+ font-size: 22px;
 }
 .footer .footer-container .footer-nav{
   position: relative;
@@ -290,6 +302,7 @@ body{
 }
 .footer .footer-container .footer-nav ul li a{
   color: white;
+  font-size: 18px;
 }
 .footer .footer-container .footer-nav ul li a:hover{
   color: red;
@@ -303,18 +316,11 @@ body{
 .footer .footer-container .footer-userful-link a{
   color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 .footer .footer-container .footer-userful-link a:hover{
   color: red;
 }
-/* .footer .footer-container .footer-userful-link ul{
- position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: block;
-} */
-
 .footer .footer-container .footer-contact-info{
   height: 150px;
   text-align: center;
@@ -325,6 +331,7 @@ body{
 .footer .footer-container .footer-contact-info a{
   color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 .footer .footer-container .footer-contact-info a:hover{
   color: red;
@@ -335,10 +342,423 @@ body{
 }
 .footer .dev-info p{
   color: #333;
+  font-size: 18px;
 }
 .footer .dev-info p span{
   color: red;
+  font-size: 22px;
 }
+
+
+
+
+
+/* responsive design */
+@media (max-width: 1440px) {
+  .header .logo a{
+  font-size: 34px; /* Postavlja veličinu fonta za logo */
+}
+.header .logo a span{
+  font-size: 38px; /* Postavlja veličinu fonta za logo */
+}
+.header .nav ul li a{
+  font-size: 22px; /* Postavlja veličinu fonta za linkove */
+}
+
+.jumbotron h1{
+  font-size: 50px; /* Veličina fonta za naslov */
+}
+.jumbotron h1 span{
+  font-size: 70px; /* Veličina fonta za span je veća */
+}
+
+.container-cards h2{
+  font-size: 28px; /* Veličina fonta za naslov */
+}
+.container-card h3{
+  font-size: 24px;
+}
+.container-card p{
+  font-size: 22px;
+}
+.container-brewing-steps .container h2{
+  font-size: 28px; /* Veličina fonta za naslov */
+}
+.container-brewing-steps  .container .left ul li{
+  font-size: 20px;
+}
+.container-form .container h2{
+  font-size: 28px; /* Veličina fonta za naslov */
+}
+
+
+/* Footer */
+.footer .footer-container .footer-logo a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-logo a span{
+ font-size: 20px;
+}
+.footer .footer-container .footer-nav ul li a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-userful-link a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-contact-info a{
+  font-size: 16px;
+}
+.footer .dev-info p{
+  color: #333;
+  font-size: 16px;
+}
+.footer .dev-info p span{
+  color: red;
+  font-size: 20px;
+}
+}
+
+
+
+/* responsive design */
+@media (max-width: 1024px) {
+  .header .logo a{
+  font-size: 34px; /* Postavlja veličinu fonta za logo */
+}
+.header .logo a span{
+  font-size: 38px; /* Postavlja veličinu fonta za logo */
+}
+.header .nav ul li a{
+  font-size: 22px; /* Postavlja veličinu fonta za linkove */
+}
+
+.jumbotron h1{
+  font-size: 50px; /* Veličina fonta za naslov */
+}
+.jumbotron h1 span{
+  font-size: 70px; /* Veličina fonta za span je veća */
+}
+
+.container-cards h2{
+  font-size: 28px; /* Veličina fonta za naslov */
+}
+.container-card h3{
+  font-size: 24px;
+}
+.container-card p{
+  font-size: 20px;
+}
+.container-brewing-steps .container h2{
+  font-size: 28px; /* Veličina fonta za naslov */
+}
+.container-brewing-steps  .container .left ul li{
+  font-size: 18px;
+}
+.container-form .container h2{
+  font-size: 28px; /* Veličina fonta za naslov */
+}
+
+
+/* Footer */
+.footer .footer-container .footer-logo a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-logo a span{
+ font-size: 20px;
+}
+.footer .footer-container .footer-nav ul li a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-userful-link a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-contact-info a{
+  font-size: 16px;
+}
+.footer .dev-info p{
+  color: #333;
+  font-size: 16px;
+}
+.footer .dev-info p span{
+  color: red;
+  font-size: 18px;
+}
+}
+
+
+
+/* responsive design */
+@media (max-width: 992px) {
+  .header .logo a{
+  font-size: 30px; /* Postavlja veličinu fonta za logo */
+}
+.header .logo a span{
+  font-size: 34px; /* Postavlja veličinu fonta za logo */
+}
+.header .nav ul li a{
+  font-size: 20px; /* Postavlja veličinu fonta za linkove */
+}
+.header .nav .submenu li a{
+  font-size: 18px;
+}
+.jumbotron h1{
+  font-size: 40px; /* Veličina fonta za naslov */
+}
+.jumbotron h1 span{
+  font-size: 60px; /* Veličina fonta za span je veća */
+}
+
+.container-cards h2{
+  font-size: 24px; /* Veličina fonta za naslov */
+}
+.container-card h3{
+  font-size: 20px;
+}
+.container-card p{
+  font-size: 16px;
+}
+.container-brewing-steps .container h2{
+  font-size: 24px; /* Veličina fonta za naslov */
+}
+.container-brewing-steps  .container .left ul li{
+  font-size: 16px;
+}
+.container-form .container h2{
+  font-size: 24px; /* Veličina fonta za naslov */
+}
+
+
+/* Footer */
+.footer .footer-container .footer-logo a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-logo a span{
+ font-size: 20px;
+}
+.footer .footer-container .footer-nav ul li a{
+  font-size: 14px;
+}
+.footer .footer-container .footer-userful-link a{
+  font-size: 14px;
+}
+.footer .footer-container .footer-contact-info a{
+  font-size: 14px;
+}
+.footer .dev-info p{
+  color: #333;
+  font-size: 14px;
+}
+.footer .dev-info p span{
+  color: red;
+  font-size: 16px;
+}
+}
+
+
+/* responsive design */
+@media (max-width:650px){
+.header .logo a{
+  font-size: 28px; /* Postavlja veličinu fonta za logo */
+}
+.header .logo a span{
+  font-size: 32px; /* Postavlja veličinu fonta za logo */
+}
+.header .nav{
+  display: none;
+}
+.jumbotron h1{
+  font-size: 30px; /* Veličina fonta za naslov */
+}
+.jumbotron h1 span{
+  
+  font-size: 50px; /* Veličina fonta za span je veća */
+}
+
+.container-cards h2{
+  font-size: 22px; /* Veličina fonta za naslov */
+}
+.container-card h3{
+  font-size: 18px;
+}
+.container-card img{
+  width: 80%; /* Slika u kartici zauzima 70% širine kartice */
+}
+.container-card p{
+  width: 80%; /* Širina teksta je 70% širine kartice */ 
+  font-size: 14px;
+}
+.btn {
+  padding: 5px 15px; /* Padding oko teksta dugmeta */
+}
+.container-brewing-steps .container h2{
+  font-size: 22px; /* Veličina fonta za naslov */
+}
+.container-brewing-steps  .container .left ul li{
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.container-form .container h2{
+  font-size: 22px; /* Veličina fonta za naslov */
+}
+.container-form .container .right form{
+  width: 70%;
+}
+.container-form .container .right form input,
+.container-form .container .right form textarea{
+  height: 30px;
+}
+.container-form .container .right form  [type="reset"],
+.container-form .container .right form  [type="submit"] {
+  display: block;
+  margin: 8px auto;
+
+  width: 60%;
+}
+/* Footer */
+.footer .footer-container article{
+  width: 50%;
+  float: left;
+}
+.footer .footer-container .footer-logo {
+  margin-left: -30px;
+}
+.footer .footer-container .footer-logo a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-logo a span{
+ font-size: 20px;
+}
+.footer .footer-container .footer-nav{
+  margin-left: -10px;
+}
+.footer .footer-container .footer-nav ul li a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-userful-link{
+  height: 100px;
+  margin-top: 10px;
+}
+.footer .footer-container .footer-userful-link a{
+  font-size: 16px;
+}
+.footer .footer-container .footer-contact-info{
+  height: 100px;
+  margin-top: 10px;
+}
+.footer .footer-container .footer-contact-info a{
+  font-size: 16px;
+}
+.footer .dev-info p{
+  font-size: 12px;
+}
+.footer .dev-info p span{
+  color: red;
+  font-size: 14px;
+}
+}
+
+/* responsive design */
+@media (max-width:450px){
+
+.header .logo{
+}
+.header .logo a{
+  font-size: 28px; /* Postavlja veličinu fonta za logo */
+}
+.header .logo a span{
+  font-size: 32px; /* Postavlja veličinu fonta za logo */
+}
+.header .nav{
+  display: none;
+}
+.jumbotron h1{
+  font-size: 30px; /* Veličina fonta za naslov */
+}
+.jumbotron h1 span{
+  
+  font-size: 50px; /* Veličina fonta za span je veća */
+}
+.container-card-holder{
+  width: 100%; /* Svaka kartica zauzima trećinu širine */
+  margin: 0 auto;
+}
+.container-cards h2{
+  font-size: 22px; /* Veličina fonta za naslov */
+}
+.container-card h3{
+  font-size: 18px;
+}
+.container-card img{
+  width: 80%; /* Slika u kartici zauzima 70% širine kartice */
+}
+.container-card p{
+  width: 80%; /* Širina teksta je 70% širine kartice */ 
+  font-size: 14px;
+}
+.btn {
+  padding: 5px 15px; /* Padding oko teksta dugmeta */
+}
+.container-brewing-steps .container h2{
+  font-size: 22px; /* Veličina fonta za naslov */
+  padding: unset;
+}
+.container-brewing-steps  .container .left,.container-brewing-steps  .container .right{
+  width: 100%;
+}
+.container-brewing-steps  .container .left ul {
+  margin-top: -15px;
+}
+.container-brewing-steps  .container .left ul li{
+  font-size: 12px;
+  font-weight: 800;
+}
+.container-brewing-steps  .container .right img{
+  margin-top: -20px;
+}
+.container-form .container h2{
+  font-size: 22px; /* Veličina fonta za naslov */
+}
+.container-form .container .right form{
+  width: 70%;
+}
+.container-form .container .right form input,
+.container-form .container .right form textarea{
+  height: 30px;
+}
+.container-form .container .right form  [type="reset"],
+.container-form .container .right form  [type="submit"] {
+  display: block;
+  margin: 8px auto;
+
+  width: 60%;
+}
+/* Footer */
+.footer .footer-container article{
+  width: 100%;
+  
+}
+.footer .footer-container .footer-logo {
+  margin: 0;
+}
+.footer .footer-container .footer-nav{
+  margin-left: 0;
+  margin-top: -50px;
+}
+.footer .footer-container .footer-userful-link{
+  margin: 0;
+}
+.footer .footer-container .footer-contact-info{
+  margin: 0;
+}
+}
+
+
+
+
+
+
+
 /* ******************************************** */
 /* Helpers - Pomoćni stilovi */
 /* ******************************************** */
