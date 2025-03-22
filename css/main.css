@@ -56,7 +56,7 @@ body{
 }
 .submenu{
   opacity: 0;;
-  width: 120px;
+  width: 105px;
   height: 200px;
   background-color: rgba(83, 82, 82, 0.2); /* Poluprovidna siva */
   backdrop-filter: blur(5px); /* Zamućuje sadržaj iza elementa */
