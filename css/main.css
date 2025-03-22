@@ -681,7 +681,7 @@ body{
 }
 .container-card-holder{
   width: 100%; /* Svaka kartica zauzima trećinu širine */
-  margin: 0 auto;
+  padding: unset;
 }
 .container-cards h2{
   font-size: 22px; /* Veličina fonta za naslov */
