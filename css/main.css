@@ -71,9 +71,6 @@ body{
   opacity: 1;
   
 }
-/* .main-menu-li:hover.submenu{
-  display: block;
-} */
 /* End of Sub-menu */
 
 /* Jumbotron - Velika pozadinska slika sa tekstom koji je u prvom planu */
@@ -131,7 +128,7 @@ body{
   font-size: 26px;
 }
 .container-card img{
-  width: 80%; /* Slika u kartici zauzima 70% širine kartice */
+  width: 80%; /* Slika u kartici zauzima 80% širine kartice */
   padding-bottom: 10px; /* Padding na dnu slike */
 }
 .container-card p{
@@ -165,7 +162,7 @@ body{
 .container-brewing-steps .container .left,
 .container-brewing-steps .container .right{
   float: left; /* Elementi unutar sekcije su raspoređeni horizontalno */
-  width: 48.5%; /* Svaka polovina sekcije zauzima 50% širine, ostavlja razmak između njih */
+  width: 48.5%; /* Svaka polovina sekcije zauzima 48.5% širine, ostavlja razmak između njih */
  
 }
 .container-brewing-steps .container h2{
@@ -224,7 +221,7 @@ body{
 .container-form .container .right{
   float: left; /* Elementi unutar sekcije su raspoređeni horizontalno*/
   width: 48.5%;
-   /* Svaka polovina sekcije zauzima 50%*/
+   /* Svaka polovina sekcije zauzima 48.5%*/
    margin: 0 auto;
 }
 .container-form .container .left {
@@ -585,10 +582,10 @@ body{
   font-size: 18px;
 }
 .container-card img{
-  width: 80%; /* Slika u kartici zauzima 70% širine kartice */
+  width: 80%; /* Slika u kartici zauzima 80% širine kartice */
 }
 .container-card p{
-  width: 80%; /* Širina teksta je 70% širine kartice */ 
+  width: 80%; /* Širina teksta je 80% širine kartice */ 
   font-size: 14px;
 }
 .btn {
@@ -684,7 +681,7 @@ body{
   font-size: 50px; /* Veličina fonta za span je veća */
 }
 .container-card-holder{
-  width: 100%; /* Svaka kartica zauzima trećinu širine */
+  width: 100%; /* Svaka kartica zauzima 100% širine */
 }
 .container-cards h2{
   font-size: 22px; /* Veličina fonta za naslov */
@@ -693,10 +690,10 @@ body{
   font-size: 18px;
 }
 .container-card img{
-  width: 100%; /* Slika u kartici zauzima 70% širine kartice */
+  width: 100%; /* Slika u kartici zauzima 100% širine kartice */
 }
 .container-card p{
-  width: 80%; /* Širina teksta je 70% širine kartice */ 
+  width: 80%; /* Širina teksta je 80% širine kartice */ 
   font-size: 14px;
 }
 .btn {
