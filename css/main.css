@@ -697,6 +697,7 @@ body{
 }
 .btn {
   padding: 5px 15px; /* Padding oko teksta dugmeta */
+  margin-top: 10px;
 }
 .container-brewing-steps .container h2{
   font-size: 22px; /* Veličina fonta za naslov */
