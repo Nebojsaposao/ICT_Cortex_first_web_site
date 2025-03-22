@@ -45,6 +45,11 @@ body{
 .header .nav ul li a{
   color: #fff; /* Postavlja boju linkova u meniju na belu */
   font-size: 24px; /* Postavlja veličinu fonta za linkove */
+  
+}
+.header .nav ul li a.active{
+  color: #f00; /* Postavlja boju linkova u meniju na nijansu crvene*/
+  font-weight: 550;
 }
 .header .nav ul li a:hover{
   color: #f00; 
@@ -300,10 +305,13 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.footer .footer-container .footer-nav ul li a{
+}.footer .footer-container .footer-nav ul li a{
   color: white;
   font-size: 18px;
+}
+.footer .footer-container .footer-nav ul li a.active{
+  color: #f00;
+  font-weight: 600;
 }
 .footer .footer-container .footer-nav ul li a:hover{
   color: red;
