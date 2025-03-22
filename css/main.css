@@ -690,7 +690,7 @@ body{
   font-size: 18px;
 }
 .container-card img{
-  width: 80%; /* Slika u kartici zauzima 70% širine kartice */
+  width: 100%; /* Slika u kartici zauzima 70% širine kartice */
 }
 .container-card p{
   width: 80%; /* Širina teksta je 70% širine kartice */ 
