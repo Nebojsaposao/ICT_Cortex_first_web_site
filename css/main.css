@@ -92,7 +92,7 @@ body{
   position: absolute; /* Pozicionira naslov apsolutno unutar jumbotrone */
   top: 50%; /* Postavlja naslov vertikalno u sredinu */
   left: 50%; /* Postavlja naslov horizontalno u sredinu */
-  transform: translate(-50%, -100%); /* Pomera naslov za tačno pozicioniranje u centar */
+  transform: translate(-50%, -50%); /* Pomera naslov za tačno pozicioniranje u centar */
 }
 .jumbotron h1 span{
   color: #f00; /* Boja za deo naslova (span) je crvena */
@@ -166,6 +166,7 @@ body{
 .container-brewing-steps .container .right{
   float: left; /* Elementi unutar sekcije su raspoređeni horizontalno */
   width: 48.5%; /* Svaka polovina sekcije zauzima 50% širine, ostavlja razmak između njih */
+ 
 }
 .container-brewing-steps .container h2{
   text-align: center; /* Centriranje naslova */
@@ -255,6 +256,7 @@ body{
 .container-form .container .right form textarea{
   width: 100%;
   height: 40px;
+   margin-bottom: 10px;
 }
 .container-form .container .right form  [type="reset"],
 .container-form .container .right form  [type="submit"] {
