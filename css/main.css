@@ -718,6 +718,11 @@ body{
 }
 .container-form .container h2{
   font-size: 22px; /* Veličina fonta za naslov */
+  margin: 20px 0;
+}
+.container-form .container .left,
+.container-form .container .right{
+  width: 100%;
 }
 .container-form .container .right form{
   width: 70%;
@@ -729,9 +734,9 @@ body{
 .container-form .container .right form  [type="reset"],
 .container-form .container .right form  [type="submit"] {
   display: block;
-  margin: 8px auto;
+  margin: 12px auto;
 
-  width: 60%;
+  width: 70%;
 }
 /* Footer */
 .footer .footer-container article{
