@@ -730,6 +730,7 @@ body{
 .container-form .container .right form input,
 .container-form .container .right form textarea{
   height: 30px;
+  margin-bottom: 10px;
 }
 .container-form .container .right form  [type="reset"],
 .container-form .container .right form  [type="submit"] {
